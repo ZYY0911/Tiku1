@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/wdzh_item"
+            android:icon="@drawable/ic_accout"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/zdgl_item"
+            android:icon="@drawable/ic_accountmanager"
+            android:title="@string/my_accountmanager" />
+        <item
+            android:id="@+id/clwz_item"
+            android:icon="@drawable/ic_car_paile"
+            android:title="@string/car_history" />
+        <item
+            android:id="@+id/hjzb_item"
+            android:icon="@drawable/ic_environment"
+            android:title="@string/str_environment" />
+        <item
+            android:id="@+id/yzsz_item"
+            android:icon="@drawable/ic_oldsetting"
+            android:title="@string/old_setting" />
+
+        <item
+            android:id="@+id/cxgl_item"
+            android:icon="@drawable/ic_sutpc_manager"
+            android:title="@string/sutpc_manager" />
+        <item
+            android:id="@+id/sjfx_item"
+            android:icon="@drawable/ic_dataanalysis"
+            android:title="@string/date_analysis" />
+
+        <item
+            android:id="@+id/dzbc_item"
+            android:icon="@drawable/ic_bus"
+            android:title="@string/my_bus" />
+        <item
+            android:id="@+id/tqxx_item"
+            android:icon="@drawable/ic_sun_info"
+            android:title="@string/sun_info" />
+        <item
+            android:id="@+id/ssjt_item"
+            android:icon="@drawable/ic_bus_search"
+            android:title="@string/bus_search" />
+    </group>
+</menu>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tiku1</string>
+    <string name="my_account">我的账户</string>
+    <string name="my_accountmanager">账单管理</string>
+    <string name="old_setting">阈值设置</string>
+    <string name="car_history">车辆违章</string>
+    <string name="str_environment">环境指标</string>
+    <string name="my_account_ye">账户余额:</string>
+    <string name="my_account_car">车     号:</string>
+
+    <string name="my_account_add">充值金额:</string>
+    <string name="sutpc_manager">出行管理</string>
+    <string name="date_analysis">数据分析</string>
+    <string name="my_bus">定制班车</string>
+    <string name="sun_info">天气信息</string>
+    <string name="bus_search">实时交通</string>
+
+    <string name="query">查询</string>
+    <string name="recharge">充值</string>
+</resources>

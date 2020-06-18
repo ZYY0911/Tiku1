@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F05117"
+                android:gravity="center"
+                android:padding="@dimen/padding_15"
+                android:text="2020年6月-2020年7月"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/tv_text_size_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="周日"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周一"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周二"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周三"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周四"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周五"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCECC"
+                    android:gravity="center"
+                    android:text="周六"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/tv_text_size_medium" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/my_gird"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="7"></GridView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_20"
+                android:text="乘车日期："
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/tv_text_size" />
+
+            <TextView
+                android:id="@+id/bus_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/tv_text_size" />
+
+
+            <TextView
+                android:id="@+id/bus_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/tv_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/bt_next"
+                    android:layout_width="260dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bg_blue"
+                    android:text="下一步"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/bt_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.haibin.calendarview.CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.haibin.calendarview.CalendarView>
+
+</LinearLayout>

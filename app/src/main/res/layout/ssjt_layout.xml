@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="570dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_ssjt"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_search"
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_ssjt2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:hint="请输入公交车线路"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="@dimen/tv_text_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_search"
+                android:background="@drawable/shap_yuan"
+                android:gravity="center"
+                android:text="搜索"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="570dp"
+        android:layout_below="@id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="570dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="搜索历史"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/tv_text_size_medium" />
+
+        <View
+            android:layout_width="570dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="#000" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/history_list"
+            android:layout_weight="1"></ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清空搜索历史"
+            android:gravity="center"
+            android:id="@+id/tv_clear"
+            android:textSize="@dimen/tv_text_size_small"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
